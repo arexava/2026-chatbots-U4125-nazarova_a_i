@@ -1,7 +1,7 @@
-#### University: ITMO University  
-#### Faculty: [FTMI]  
-#### Course: Vibe Coding: AI-боты для бизнеса  
-#### Year: 2025/2026  
+University: ITMO University  
+Faculty: [FTMI]  
+Course: Vibe Coding: AI-боты для бизнеса  
+Year: 2025/2026  
 Group: U4125  
 Author: Nazarova Arina Ilinichna  
 Lab: Lab1  
@@ -10,7 +10,7 @@ Date of finished: хх.04.2026
 
 # Отчет по лабораторной работе  
 
-## Описание задачи  
+### Описание задачи  
 Какую проблему решает бот  
 Почему выбрали именно эту задачу  
 
