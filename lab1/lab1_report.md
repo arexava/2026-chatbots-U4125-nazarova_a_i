@@ -1,11 +1,7 @@
-#### University: 
-ITMO University  
-#### Faculty: 
-[FTMI]  
-#### Course: 
-Vibe Coding: AI-боты для бизнеса  
-#### Year: 
-2025/2026  
+#### University: ITMO University  
+#### Faculty: [FTMI]  
+#### Course: Vibe Coding: AI-боты для бизнеса  
+#### Year: 2025/2026  
 Group: U4125  
 Author: Nazarova Arina Ilinichna  
 Lab: Lab1  
