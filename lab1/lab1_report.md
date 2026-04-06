@@ -95,7 +95,7 @@
 
 <img width="563" height="181" alt="Снимок экрана 2026-04-06 в 22 15 07" src="https://github.com/user-attachments/assets/8ca3d8fb-42a3-4530-8872-2eff00510686" />  
 
-**Видео-демо** [(ссылка на YouTube/Google Drive)  ](https://drive.google.com/drive/u/0/folders/1il8sTnnB6_nyyDc0mPzhZQsP65HH429K)  
+**Видео-демо** [(ссылка на Google Drive)  ](https://drive.google.com/drive/u/0/folders/1il8sTnnB6_nyyDc0mPzhZQsP65HH429K)  
 
 ### Трудности и решения  
 Бот не запускался, хотя были сделаны все шаги верно, оказалось на маке надо вводить не "python bot.py", а "python3 bot.py". Итог - все запустилось. В остальном не было проблем  
