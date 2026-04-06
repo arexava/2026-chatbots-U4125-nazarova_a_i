@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "users": {
+    "183177867": {
+      "next_id": 2,
+      "tasks": [
+        {
+          "id": 1,
+          "text": "Заказать справку в студофисе",
+          "created_at": "2026-04-03T22:17:58",
+          "done": false,
+          "priority": "high",
+          "reminder_at": "2026-04-06T21:57:00",
+          "reminder_sent": true
+        }
+      ]
+    }
+  }
+}
