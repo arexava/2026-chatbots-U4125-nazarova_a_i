@@ -20,6 +20,7 @@
 
 ### Промпт для LLM  
 С помощью @BotFather в Телеграм создала своего бота и сохранила токен.  
+Username: @itmoftmi_nai_bot, имя бота: Huba Buba helper  
 Составила **первичный промпт**:  
 >Создай Telegram-бота на Python с использованием библиотеки python-telegram-bot.  
 >
