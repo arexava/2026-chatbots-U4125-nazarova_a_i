@@ -5,8 +5,8 @@
 **Group:** U4125  
 **Author:** Nazarova Arina Ilinichna  
 **Lab:** Lab2  
-**Date of create:** хх.04.2026  
-**Date of finished:** хх.04.2026 
+**Date of create:** 08.04.2026  
+**Date of finished:** 09.04.2026 
 
 ## Отчет по лабораторной работе "Подключение бота к данным"  
 
@@ -31,7 +31,7 @@
 
 Скриншоты работы
 Примеры запросов и ответов
-Видео-демо (ссылка на YouTube/Google Drive)  
+Видео-демо (ссылка на Google Drive) https://drive.google.com/drive/u/0/folders/1il8sTnnB6_nyyDc0mPzhZQsP65HH429K   
 
 ### Трудности и решения  
 
