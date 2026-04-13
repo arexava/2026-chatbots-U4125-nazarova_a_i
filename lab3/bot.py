@@ -18,7 +18,7 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 from telegram import Update
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram.ext import Updater, CommandHandler
 
 # ---------------------------------------------------------------------------
 # Конфигурация и константы
@@ -683,18 +683,19 @@ def main() -> None:
     store = TaskStore(data_path)
     logger.info("Файл данных: %s", data_path)
 
-    application = Application.builder().token(token).build()
+    updater = Updater(token, use_context=True)
+    dp = updater.dispatcher
 
-    application.add_handler(CommandHandler("start", cmd_start))
-    application.add_handler(CommandHandler("help", cmd_help))
-    application.add_handler(CommandHandler("add", cmd_add))
-    application.add_handler(CommandHandler("list", cmd_list))
-    application.add_handler(CommandHandler("done", cmd_done))
-    application.add_handler(CommandHandler("delete", cmd_delete))
-    application.add_handler(CommandHandler("priority", cmd_priority))
-    application.add_handler(CommandHandler("reminder", cmd_reminder))
-    application.add_handler(CommandHandler("news", cmd_news))
-    application.add_handler(CommandHandler("news_today", cmd_news_today))
+    dp.add_handler(CommandHandler("start", cmd_start))
+    dp.add_handler(CommandHandler("help", cmd_help))
+    dp.add_handler(CommandHandler("add", cmd_add))
+    dp.add_handler(CommandHandler("list", cmd_list))
+    dp.add_handler(CommandHandler("done", cmd_done))
+    dp.add_handler(CommandHandler("delete", cmd_delete))
+    dp.add_handler(CommandHandler("priority", cmd_priority))
+    dp.add_handler(CommandHandler("reminder", cmd_reminder))
+    dp.add_handler(CommandHandler("news", cmd_news))
+    dp.add_handler(CommandHandler("news_today", cmd_news_today))
 
     # Проверка напоминаний каждые 60 секунд (нужен extras job-queue)
     job_queue = application.job_queue
@@ -707,7 +708,8 @@ def main() -> None:
         job_queue.run_repeating(reminder_tick, interval=60, first=10)
 
     logger.info("Бот запущен (polling).")
-    application.run_polling(allowed_updates=Update.ALL_TYPES)
+    updater.start_polling()
+    updater.idle()
 
 
 if __name__ == "__main__":
